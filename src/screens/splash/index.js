@@ -6,7 +6,7 @@ import {Bg1, Logo} from '../../assets'
 const Splash = ({navigation}) => {
     useEffect(() => {
         setTimeout(() => {
-            navigation.navigate('Home')
+            navigation.navigate('HomeScreen')
         }, 3000)
     })
 
