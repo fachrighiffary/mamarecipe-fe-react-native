@@ -1,1 +1,0 @@
-export const BANNER_H = 462;

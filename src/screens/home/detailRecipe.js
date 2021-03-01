@@ -3,7 +3,6 @@ import { View, Text,Image, StyleSheet, ScrollView, Animated, Dimensions, FlatLis
 import {TouchableOpacity} from 'react-native-gesture-handler'
 import {colors} from '../../utils/colors'
 import { BtmLine, CommentImg, IconBack2, Image1, Image2, Play } from '../../assets'
-import { BANNER_H } from './constants'
 import CardVideo from '../../components/card/cardVideo'
 import CardComment from '../../components/card/cardComment'
 
