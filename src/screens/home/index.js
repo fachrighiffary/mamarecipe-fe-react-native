@@ -1,6 +1,7 @@
 import React from 'react'
-import { TouchableOpacity, View, Text, StyleSheet, Image, TextInput, ScrollView } from 'react-native'
+import {  View, Text, StyleSheet, Image, TextInput, ScrollView, NavigatorIOS } from 'react-native'
 import { Chicken, IconSearch, Image1, Image2, Image3, Image4, Seafood, Soup } from '../../assets'
+import {TouchableOpacity} from 'react-native-gesture-handler'
 
 const Home = ({navigation}) => {
     return (
@@ -16,30 +17,30 @@ const Home = ({navigation}) => {
             </View>
             <View style={styles.containerPopular}>
                 <ScrollView horizontal={true} showsHorizontalScrollIndicator={false} >
-                    <View style={styles.cardPopular}>
+                    <TouchableOpacity activeOpacity={0.6} style={styles.cardPopular} onPress={() => {
+                        navigation.navigate('DetailRecipe')
+                    }}>
                         <Image style={styles.card} source={Image1} />
                         <View style={styles.txtImg}>
                             <Text style={{color: 'white', fontSize: 16,fontWeight:'bold'}}>Sandwich with Egg</Text>
                         </View>
-                    </View>
-                    <View style={styles.cardPopular}>
+                    </TouchableOpacity>
+                    <TouchableOpacity activeOpacity={0.6} style={styles.cardPopular} onPress={() => {
+                        navigation.navigate('DetailRecipe')
+                    }}>
                         <Image style={styles.card} source={Image2} />
                         <View style={styles.txtImg}>
                             <Text style={{color: 'white', fontSize: 16,fontWeight:'bold'}}>Chicken Steak</Text>
                         </View>
-                    </View>
-                    <View style={styles.cardPopular}>
-                        <Image style={styles.card} source={Image2} />
+                    </TouchableOpacity>
+                    <TouchableOpacity activeOpacity={0.6} style={styles.cardPopular} onPress={() => {
+                        navigation.navigate('DetailRecipe')
+                    }}>
+                        <Image style={styles.card} source={Image1} />
                         <View style={styles.txtImg}>
-                            <Text style={{color: 'white', fontSize: 16,fontWeight:'bold'}}>Chicken Steak</Text>
+                            <Text style={{color: 'white', fontSize: 16,fontWeight:'bold'}}>Sandwich with Egg</Text>
                         </View>
-                    </View>
-                    <View style={styles.cardPopular}>
-                        <Image style={styles.card} source={Image2} />
-                        <View style={styles.txtImg}>
-                            <Text style={{color: 'white', fontSize: 16,fontWeight:'bold'}}>Chicken Steak</Text>
-                        </View>
-                    </View>
+                    </TouchableOpacity>
                 </ScrollView>
             </View>
 
@@ -84,7 +85,9 @@ const Home = ({navigation}) => {
             </View>
             <View style={styles.containerPopular}>
                 <ScrollView horizontal={true} showsHorizontalScrollIndicator={false} >
-                    <View style={styles.cardNew}>
+                    <TouchableOpacity style={styles.cardNew} onPress={() => {
+                        navigation.navigate('DetailRecipe')
+                    }}>
                         <Image style={styles.imgNew} source={Image3} />
                         <View style={styles.txtPopularCard}>
                             <Text style={{color: 'black', fontSize: 14,fontWeight:'bold'}}>Sandwich with Egg</Text>
@@ -92,8 +95,10 @@ const Home = ({navigation}) => {
                                 <Text style={{fontSize: 10}}>Beef steak with nopales, tartare ....</Text>
                             </View>
                         </View>
-                    </View>
-                    <View style={styles.cardNew}>
+                    </TouchableOpacity>
+                    <TouchableOpacity style={styles.cardNew} onPress={() => {
+                        navigation.navigate('DetailRecipe')
+                    }}>
                         <Image style={styles.imgNew} source={Image4} />
                         <View style={styles.txtPopularCard}>
                             <Text style={{color: 'black', fontSize: 14,fontWeight:'bold'}}>Sandwich with Egg</Text>
@@ -101,7 +106,7 @@ const Home = ({navigation}) => {
                                 <Text style={{fontSize: 10}}>Beef steak with nopales, tartare ....</Text>
                             </View>
                         </View>
-                    </View>
+                    </TouchableOpacity>
                     
                 </ScrollView>
             </View>
@@ -117,7 +122,7 @@ const styles = StyleSheet.create({
     },
     formSearch : {
         height : 50,
-        width: 319,
+        width: '90%',
         backgroundColor: '#EFEFEF',
         borderRadius: 15,
         alignSelf: 'center',

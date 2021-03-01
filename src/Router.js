@@ -15,6 +15,11 @@ import AddRecipe from './screens/addRecipe';
 import Chat from './screens/chat';
 import Profile from './screens/profile';
 import TabComponent from './components/Tab'
+import EditProfile from './screens/profile/editProfile';
+import LikedRecipe from './screens/profile/likedRecipe';
+import SavedRecipe from './screens/profile/savedRecipe';
+import MyRecipe from './screens/profile/myRecipe';
+import DetailRecipe from './screens/home/detailRecipe';
 
 
 const Stack = createStackNavigator();
@@ -69,6 +74,41 @@ const Router = () => {
                 <Stack.Screen 
                     name="ResetPassword"
                     component={ResetPassword}
+                    options={{
+                        headerShown: false
+                    }}
+                />
+                <Stack.Screen 
+                    name="EditProfile"
+                    component={EditProfile}
+                    options={{
+                        headerShown: false
+                    }}
+                />
+                <Stack.Screen 
+                    name="LikedRecipe"
+                    component={LikedRecipe}
+                    options={{
+                        headerShown: false
+                    }}
+                />
+                <Stack.Screen 
+                    name="MyRecipe"
+                    component={MyRecipe}
+                    options={{
+                        headerShown: false
+                    }}
+                />
+                <Stack.Screen 
+                    name="SavedRecipe"
+                    component={SavedRecipe}
+                    options={{
+                        headerShown: false
+                    }}
+                />
+                <Stack.Screen 
+                    name="DetailRecipe"
+                    component={DetailRecipe}
                     options={{
                         headerShown: false
                     }}

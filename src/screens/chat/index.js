@@ -1,18 +1,25 @@
 import React from 'react'
-import { View, Text, StyleSheet } from 'react-native'
+import { View, Text, StyleSheet, Image } from 'react-native'
+import { ComingSoon } from '../../assets'
 
 const Chat = () => {
     return (
         <View style={styles.container}> 
-            <Text>Ini adalah halaman chat</Text>
+            <Image source={ComingSoon} style={styles.img} />
         </View>
     )
 }
 
 const styles = StyleSheet.create({
     container : {
-        backgroundColor: 'pink',
-        flex: 1
+        flex: 1,
+        justifyContent: 'center',
+        alignItems: 'center',
+        backgroundColor: 'white'
+    },
+    img : {
+        height: 250,
+        width: 300
     }
 })
 

@@ -16,6 +16,15 @@ import IconSearch from './icons/search.png'
 import Chicken from './icons/chicken.png'
 import Soup from './icons/soup.png'
 import Seafood from './icons/seafood.png'
+import Liked from './icons/liked.png'
+import MyRecipe from './icons/myrecipe.png'
+import BookMark from './icons/bookmark.png'
+import IconNext from './icons/next.png'
+import IconBack2 from './icons/iconBack2.png'
+import Book from './icons/book.png'
+import Video from './icons/video.png'
+import BtmLine from './images/btmline.png'
+import Play from './icons/play.png'
 
 
 
@@ -23,6 +32,11 @@ import Image1 from './images/image1.png'
 import Image2 from './images/image2.png'
 import Image3 from './images/image3.png'
 import Image4 from './images/image4.png'
+import ComingSoon from './images/comingsoon.png'
+import PhotoProfile from './images/profile.png'
+import Myrecipe1 from './images/myrecipe1.png'
+import Myrecipe2 from './images/myrecipe2.png'
+import CommentImg from './images/commentimg.png'
 
 
 
@@ -50,4 +64,18 @@ export {
     Chicken,
     Soup,
     Seafood,
+    ComingSoon,
+    PhotoProfile,
+    Liked,
+    MyRecipe,
+    BookMark,
+    IconNext,
+    IconBack2,
+    Book,
+    Video,
+    Myrecipe1,
+    Myrecipe2,
+    BtmLine,
+    Play,
+    CommentImg
 }
